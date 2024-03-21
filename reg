@@ -1,0 +1,19 @@
+git clone git@github.com:*YOURE_GITHUB*/version_control.git
+git checkout -b updatereadme
+vim README.md
+git add README.md
+git commit -m "На экране найти вкладку «Pull request».
+
+Нажать на кнопку «New pull request».
+
+Выбрать ветку, которую нужно сравнить с веткой «Master».
+
+Сравнить ветку с мастером и увидеть список всех изменений.
+
+Нажать на кнопку «Create pull request».
+
+Пояснить pull request и снова нажать на кнопку «Create pull request».
+
+Владелец репозитория увидит pull request и сможет принять меры для его объединения."
+git push --set-upstream origin updatereadme
+GIT_SSH_COMMAND='ssh -i ~/.ssh/user-private-key -o IdentitiesOnly=yes' git push git@github.com:gulden-geekbrains/version_control.git
